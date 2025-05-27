@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rasti Group</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #004a7c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #00395d;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .hero {
+      padding: 50px;
+      background-color: #e0f0ff;
+      text-align: center;
+    }
+    .hero h1 {
+      margin-bottom: 10px;
+    }
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+    .footer {
+      background-color: #002b45;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rasti Group</h1>
+    <p></p>
+  </header>
+  <!-- <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>  -->
+  <section class="hero">
+    <h1>راستي كروب يمكنكم ان تأسسوا بيوتكم  بمكنسات هصكي  الكندية المركزية الذي يتميز بالجودة العالية  وبالقوة في سحب الاوساخ</h1>
+    <h2>بضمان
+ عشر سنوات
+وبكادر
+متخصص ومتميز</h2>
+    <video width="1000" height="640" controls>
+        <source src="video/video.mp4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  </section>
+  <!-- <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>HydroStruct is a global brand dedicated to providing advanced water piping solutions for infrastructure, construction, and industrial projects. We combine durability, precision, and smart engineering.</p>
+  </section> -->
+  <!-- <section class="section" id="products">
+    <h2>Our Products</h2>
+    <p>Explore our wide range of pipes, reducers, valves, and connectors, all designed to meet international quality standards.</p>
+  </section> -->
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <h3>عنوان:کرکوک
+ شارع الجمهوریة فرع زیوت القدیمة<br>تلفون: 07721605683 --
+07701315243</h3>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2025 SIPAN.</p>
+  </footer>
+</body>
+</html>
+<div style="text-align:center; margin: 30px;">
+  <h3>Scan to open this site:</h3>
+  <img id="qr" alt="QR Code" />
+</div>
+<script src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://localhost:8080" id="qr-script"></script>
+<script>
+  // Set your local URL here
+  const url = "http://localhost:8080";
+  document.getElementById('qr').src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(url)}`;
+</script>
