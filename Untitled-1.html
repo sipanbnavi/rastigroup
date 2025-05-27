@@ -87,13 +87,3 @@
   </footer>
 </body>
 </html>
-<div style="text-align:center; margin: 30px;">
-  <h3>Scan to open this site:</h3>
-  <img id="qr" alt="QR Code" />
-</div>
-<script src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://localhost:8080" id="qr-script"></script>
-<script>
-  // Set your local URL here
-  const url = "http://localhost:8080";
-  document.getElementById('qr').src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(url)}`;
-</script>
